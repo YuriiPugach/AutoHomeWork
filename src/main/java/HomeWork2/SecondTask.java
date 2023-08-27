@@ -15,12 +15,26 @@ public class SecondTask {
         driver.manage().window().maximize();
 
         driver.get("http://www.ashortjourney.com/");
-        Thread.sleep(10000);
+
         Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(By.xpath("//html/body/svg/text/tspan[1]")))
-                .clickAndHold()
-                .moveToElement(driver.findElement(By.cssSelector("//html/body/svg/circle[1]")))
-                .release()
-                .build().perform();
+        int x;
+        int y;
+        for (int i = 0; i < 7; i++) {
+            Thread.sleep(6000);
+            if (i == 3 || i == 6) {
+                x = -50;
+                y = -50;
+            } else {
+                x = 50;
+                y = 50;
+            }
+            actions.moveToElement(driver.findElement(By.cssSelector("[r='40']")))
+                    .clickAndHold()
+                    .moveToElement(driver.findElement(By.cssSelector("[r='8']")), x, y)
+                    .release()
+                    .build().perform();
+        }
+        Thread.sleep(6000);
+        driver.quit();
     }
 }

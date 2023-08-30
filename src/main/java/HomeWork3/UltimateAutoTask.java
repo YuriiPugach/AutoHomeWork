@@ -29,7 +29,7 @@ public class UltimateAutoTask {
                 .sendKeys("https://www.guinnessworldrecords.com/account/register?");
         actions.keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
         actions.keyDown(Keys.CONTROL)
-                .click(driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div[1]/div/div/a")))
+                .click(driver.findElement(By.xpath("//h3[@class=\"LC20lb MBeuO DKV0Md\"][1]")))
                 .keyUp(Keys.CONTROL)
                 .build().perform();
 

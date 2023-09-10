@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests Suite">
+    <test name="AllTests">
+        <groups>
+            <run>
+                <include name = "first"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="HomeWork4.grouping.Gropes"/>
+        </classes>
+    </test>
+
+    <test name = "AllTest2">
+        <groups>
+            <run>
+                <include name = "second"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="HomeWork4.grouping.Gropes"/>
+        </classes>
+
+    </test>
+</suite>

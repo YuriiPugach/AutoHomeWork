@@ -20,7 +20,7 @@ public class foxtrotTestDataProvider extends BaseTest {
             System.out.println("Element with xpath //*[@id=\"user-location-popup\"]/div not found");
         }
 
-        driver.findElement(By.cssSelector(".header-search__field.evinent-search-input")).sendKeys(inputWord);
+        driver.findElement(By.cssSelector(".header-search__field")).sendKeys(inputWord);
         driver.findElement(By.cssSelector(".header-search__button")).click();
         String string1 = driver.findElement(By.cssSelector(".page__title")).getText();
         if (string1.contains(inputWord)) {

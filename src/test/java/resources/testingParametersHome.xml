@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FoxtrotTestWithParameters">
+    <test name="SearchTestWithInputWord'машина'">
+        <parameter name="inputWord" value="машина"/>
+        <classes>
+            <class name="HomeWork4.TestWithParametersAndDataProvider.foxtrotTestWithParameters"/>
+        </classes>
+    </test>
+    <test name="SearchTestWithInputWord'input'">
+        <parameter name="inputWord" value="input"/>
+        <classes>
+            <class name="HomeWork4.TestWithParametersAndDataProvider.foxtrotTestWithParameters"/>
+        </classes>
+    </test>
+    <test name="SearchTestWithInputWord'смысл'">
+        <parameter name="inputWord" value="смысл"/>
+        <classes>
+            <class name="HomeWork4.TestWithParametersAndDataProvider.foxtrotTestWithParameters"/>
+        </classes>
+    </test>
+</suite>

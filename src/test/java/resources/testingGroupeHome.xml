@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="AllTests Suite">
-    <test name="AllTests">
+    <test name="First Group">
         <groups>
             <run>
                 <include name = "first"/>
@@ -11,7 +11,7 @@
         </classes>
     </test>
 
-    <test name = "AllTest2">
+    <test name = "Second Group">
         <groups>
             <run>
                 <include name = "second"/>

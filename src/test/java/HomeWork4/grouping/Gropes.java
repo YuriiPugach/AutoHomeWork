@@ -1,6 +1,6 @@
 package HomeWork4.grouping;
 
-import HomeWork4.Task4.BaseTest;
+import HomeWork4.TestWithParametersAndDataProvider.BaseTest;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertTrue;

@@ -1,4 +1,4 @@
-package HomeWork4.Task4;
+package HomeWork4.TestWithParametersAndDataProvider;
 
 
 import org.openqa.selenium.WebDriver;

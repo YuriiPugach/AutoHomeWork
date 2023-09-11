@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="AllTests Suite">
-    <test name="AllTests">
+    <test name="Priority test with dependency">
         <classes>
             <class name="HomeWork4.priority.priority1depend"/>
         </classes>

@@ -1,16 +1,16 @@
-package HomeWork4.Task4;
+package HomeWork4.TestWithParametersAndDataProvider;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class foxtrotTest extends BaseTest {
 
-    @Test
-    @org.testng.annotations.Parameters({"inputWord"})
+
+public class foxtrotTestDataProvider extends BaseTest {
+
+    @Test(dataProvider = "inputWord")
+
     public void a(String inputWord) throws InterruptedException {
         driver.get("https://www.foxtrot.com.ua/");
 
@@ -31,4 +31,12 @@ public class foxtrotTest extends BaseTest {
 
     }
 
+    @org.testng.annotations.DataProvider(name = "inputWord")
+    public Object[][] createData() {
+        return new Object[][]{
+                {"машина"},
+                {"input"},
+                {"смысл"},
+        };
+    }
 }
